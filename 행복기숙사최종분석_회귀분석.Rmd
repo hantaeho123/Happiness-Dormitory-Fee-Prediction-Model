@@ -24,7 +24,7 @@ library(rpart)
 
 
 ```{r data load, include=FALSE}
-dt<-read.csv(file="../dormitory_prediction/기숙사비예측통일데이터.xlsx")
+dt<-read.table(file="../dormitory_prediction/기숙사비예측통일데이터.xlsx")
 ajouex<-read.csv(file="../dormitory_prediction/아주대데이터.csv")
 ```
 
@@ -145,5 +145,6 @@ CIstps<-c(ajstpm-abs(qt(0.025,74))*sqrt(MSEstpm*(1/84+xs%*%solve(t(Xs)%*%Xs)%*%t
 CIstps
 CIstps/990
 ```
+
 
 
