@@ -24,8 +24,8 @@ library(rpart)
 
 
 ```{r data load, include=FALSE}
-dt<-read.csv(file="D:/바탕화면사항/대학 과제/4학년_2학기/수학창의연구(캡스톤)/주제책정(행복기숙사)조사/최종행복기숙사비데이터.csv")
-ajouex<-read.csv(file="D:/바탕화면사항/대학 과제/4학년_2학기/수학창의연구(캡스톤)/주제책정(행복기숙사)조사/아주대데이터.csv")
+dt<-read.csv(file="../dormitory_prediction/기숙사비예측통일데이터.xlsx")
+ajouex<-read.csv(file="../dormitory_prediction/아주대데이터.csv")
 ```
 
 
@@ -145,4 +145,5 @@ CIstps<-c(ajstpm-abs(qt(0.025,74))*sqrt(MSEstpm*(1/84+xs%*%solve(t(Xs)%*%Xs)%*%t
 CIstps
 CIstps/990
 ```
+
 
